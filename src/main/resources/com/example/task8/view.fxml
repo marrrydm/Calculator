@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="5" vgap="2" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task8.Controller">
+    <children>
+        <AnchorPane onKeyPressed="#key" prefHeight="382.0" prefWidth="354.0" style="-fx-background-color: black;">
+            <children>
+                <Button layoutX="64.0" layoutY="250.0" mnemonicParsing="false" onAction="#oneAction" prefHeight="34.0" prefWidth="54.0" text="1">
+                    <font>
+                        <Font size="18.0" />
+                    </font></Button>
+                <Button layoutX="124.0" layoutY="107.0" mnemonicParsing="false" onAction="#powAction" prefHeight="34.0" prefWidth="54.0" style="-fx-background-color: orange;" text="^">
+                    <font>
+                        <Font size="16.0" />
+                    </font></Button>
+                <TextField fx:id="textField" disable="true" layoutX="15.0" layoutY="19.0" prefHeight="70.0" prefWidth="327.0" style="-fx-background-color: white;" />
+                <Button layoutX="126.0" layoutY="250.0" mnemonicParsing="false" onAction="#twoAction" prefHeight="34.0" prefWidth="54.0" text="2">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="188.0" layoutY="250.0" mnemonicParsing="false" onAction="#threeAction" prefHeight="34.0" prefWidth="54.0" text="3">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="64.0" layoutY="199.0" mnemonicParsing="false" onAction="#fourAction" prefHeight="34.0" prefWidth="54.0" text="4">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="126.0" layoutY="199.0" mnemonicParsing="false" onAction="#fiveAction" prefHeight="34.0" prefWidth="54.0" text="5">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="189.0" layoutY="199.0" mnemonicParsing="false" onAction="#sixAction" prefHeight="34.0" prefWidth="54.0" text="6">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="63.0" layoutY="150.0" mnemonicParsing="false" onAction="#sevenAction" prefHeight="34.0" prefWidth="54.0" text="7">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="124.0" layoutY="150.0" mnemonicParsing="false" onAction="#eightAction" prefHeight="34.0" prefWidth="54.0" text="8">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="188.0" layoutY="150.0" mnemonicParsing="false" onAction="#nineAction" prefHeight="34.0" prefWidth="54.0" text="9">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="250.0" layoutY="150.0" mnemonicParsing="false" onAction="#multiplyAction" prefHeight="40.0" prefWidth="46.0" style="-fx-background-color: orange;" text="*">
+                    <font>
+                        <Font size="17.0" />
+                    </font></Button>
+                <Button layoutX="251.0" layoutY="199.0" mnemonicParsing="false" onAction="#minAction" prefHeight="40.0" prefWidth="46.0" style="-fx-background-color: orange;" text="-">
+                    <font>
+                        <Font size="17.0" />
+                    </font></Button>
+                <Button layoutX="251.0" layoutY="250.0" mnemonicParsing="false" onAction="#plusAction" prefHeight="40.0" prefWidth="46.0" style="-fx-background-color: orange;" text="+">
+                    <font>
+                        <Font size="17.0" />
+                    </font></Button>
+                <Button layoutX="188.0" layoutY="107.0" mnemonicParsing="false" onAction="#sqrtAction" prefHeight="34.0" prefWidth="54.0" style="-fx-background-color: orange;" text="√">
+                    <font>
+                        <Font size="16.0" />
+                    </font></Button>
+                <Button layoutX="250.0" layoutY="107.0" mnemonicParsing="false" onAction="#divAction" prefHeight="34.0" prefWidth="46.0" style="-fx-background-color: orange;" text="/">
+                    <font>
+                        <Font size="16.0" />
+                    </font></Button>
+                <Button layoutX="189.0" layoutY="298.0" mnemonicParsing="false" onAction="#dotAction" prefHeight="40.0" prefWidth="54.0" style="-fx-background-color: orange;" text=".">
+                    <font>
+                        <Font size="17.0" />
+                    </font></Button>
+                <Button layoutX="251.0" layoutY="298.0" mnemonicParsing="false" onAction="#equalAction" prefHeight="40.0" prefWidth="46.0" style="-fx-background-color: orange;" text="=">
+                    <font>
+                        <Font size="17.0" />
+                    </font></Button>
+                <Button layoutX="64.0" layoutY="107.0" mnemonicParsing="false" onAction="#delAction" prefHeight="37.0" prefWidth="54.0" style="-fx-background-color: orange;" text="DEL">
+                    <font>
+                        <Font size="17.0" />
+                    </font></Button>
+                <Button layoutX="126.0" layoutY="298.0" mnemonicParsing="false" onAction="#zeroAction" prefHeight="34.0" prefWidth="54.0" text="0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="64.0" layoutY="299.0" mnemonicParsing="false" onAction="#clearAction" prefHeight="37.0" prefWidth="54.0" style="-fx-background-color: orange;" text="CLR">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
